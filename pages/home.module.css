@@ -1,0 +1,128 @@
+/**
+ * Nome do arquivo: home.module.css
+ * Data de criação: 10/05/2024
+ * Autor: Graziele Oliveira
+ * Matrícula: 01632441
+ *
+ * Descrição:
+ * Este arquivo CSS é responsável por estilizar meu projeto.
+ *
+ * Este script é parte o curso de ADS.
+ */
+.body{
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.form {
+  width: 500px;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.heading {
+  color: saddlebrown;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: saddlebrown;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background-color: #8B4513; /* Brown */
+}
+
+.caixaclientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background: #FFE4B5; /* Moccasin */
+  max-height: 500px;
+  text-align: center;
+  margin-left: 40px;
+  overflow-y: auto;
+}
+
+.cadastrado {
+  background-color: #FFDAB9; /* PeachPuff */
+  border-radius: 4px;
+  text-align: left;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.buttone, .buttond, .buttonb {
+  background-color: saddlebrown; /* DarkRed */
+  color: black;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.buttone:hover {
+  background-color: #FF4500; /* OrangeRed */
+}
+
+.buttond:hover {
+  background-color: red; /* Crimson */
+}
+
+.p {
+  margin: 5px 0;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ajuste conforme necessário */
+}
+
+.inputb {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.servico {
+  background-color: #FFDAB9; /* PeachPuff */
+  border-radius: 4px;
+  text-align: left;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+}
