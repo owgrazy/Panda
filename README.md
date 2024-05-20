@@ -1,3 +1,96 @@
+- Nome do arquivo: README.md
+- Data de criação: 20/05/2024
+- Autor: Graziele Oliveira
+- Matrícula: 01632441
+- Descrição:
+- Arquivo de instrução para reproduzir o projeto.
+- Este script é parte o curso de ADS.
+
+# Projeto Panda
+
+Este é o repositório do projeto Panda, construído com Next.js e Firebase.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+
+- Node.js (v12 ou superior)
+- npm (geralmente vem com o Node.js)
+- Firebase CLI (para configurar o Firebase)
+- Visual Studio Code (ou qualquer outro editor de código de sua preferência)
+
+## Instalação
+
+1. Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/seu-usuario/panda.git
+```
+
+2. Acesse o diretório do projeto:
+
+```bash
+cd panda
+```
+
+3. Instale o Next.js globalmente (se ainda não tiver instalado):
+
+```bash
+npm install -g next
+```
+
+4. Instale as dependências do projeto utilizando npm:
+
+```bash
+npm install
+```
+
+5. Configure o Firebase:
+
+- Se você ainda não tiver uma conta Firebase, [crie uma](https://console.firebase.google.com/).
+- Instale a Firebase CLI globalmente, se ainda não tiver feito isso:
+
+```bash
+npm install -g firebase-tools
+```
+
+- Faça login na Firebase CLI:
+
+```bash
+firebase login
+```
+
+- Inicie o projeto Firebase:
+
+```bash
+firebase init
+```
+
+Siga as instruções para configurar o Firebase Realtime Database e/ou Firebase Authentication, conforme necessário para o seu projeto.
+
+## Rodando o projeto
+
+Após a instalação das dependências e configuração do Firebase, você pode rodar o projeto localmente. Utilize o seguinte comando:
+
+```bash
+npm run dev
+```
+
+Isso iniciará o servidor de desenvolvimento do Next.js. Você pode acessar o projeto em seu navegador em [http://localhost:3000](http://localhost:3000).
+
+## Utilizando o Visual Studio Code
+
+Se você estiver utilizando o Visual Studio Code como seu editor de código, siga estes passos para iniciar o projeto:
+
+1. Abra o Visual Studio Code.
+2. No menu, selecione "File" > "Open Folder" e escolha a pasta do projeto Panda.
+3. Para acessar o terminal, pressione `Ctrl + `` ou vá para "Terminal" > "New Terminal" no menu.
+4. No terminal, você pode executar os comandos do projeto, como `npm run dev` para iniciar o servidor de desenvolvimento.
+
+## Contribuindo
+
+Sinta-se à vontade para contribuir com o projeto. Se você encontrar problemas ou tiver sugestões de melhorias, por favor, abra uma issue ou envie um pull request.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
