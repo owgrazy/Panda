@@ -24,7 +24,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 1. Clone o repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/panda.git
+https://github.com/owgrazy/Panda
 ```
 
 2. Acesse o diretório do projeto:
