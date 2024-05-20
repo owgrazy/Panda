@@ -1,3 +1,14 @@
+/**
+ * Nome do arquivo: firebase.js
+ * Data de criação: 10/05/2024
+ * Autor: Graziele Oliveira
+ * Matrícula: 01632441
+ *
+ * Descrição:
+ * Este arquivo JavaScript é responsável por realizar a conexão do meu projeto com o banco de dados.
+ *
+ * Este script é parte o curso de ADS.
+ */
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";

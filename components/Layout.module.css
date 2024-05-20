@@ -1,0 +1,104 @@
+/**
+ * Nome do arquivo: Layout.module.css
+ * Data de criação: 10/05/2024
+ * Autor: Graziele Oliveira
+ * Matrícula: 01632441
+ *
+ * Descrição:
+ * Este arquivo CSS é responsável por trazer a estilização especificamente do meu "menu hamburguer".
+ *
+ * Este script é parte o curso de ADS.
+ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 30px;
+  height: 21px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hamburger div,
+.hamburger div:before,
+.hamburger div:after {
+  content: '';
+  background-color: #fff;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.hamburger div:before {
+  top: -8px;
+}
+
+.hamburger div:after {
+  top: 8px;
+}
+
+.hamburger.open div {
+  transform: rotate(45deg);
+}
+
+.hamburger.open div:before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger.open div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  background: #444;
+}
+
+.mainContent {
+  margin-left: 60px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.mainContent.sidebarOpen {
+  margin-left: 200px;
+}

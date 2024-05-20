@@ -9,22 +9,29 @@
  *
  * Este script é parte o curso de ADS.
  */
-import styles from './home.module.css';
+
+// Importando a fonte Inter do Google Fonts
 import { Inter } from "next/font/google";
+// Importando o hook useRouter do Next.js para roteamento
 import { useRouter } from 'next/router';
 
+// Configuração da fonte Inter
 const inter = Inter({ subsets: ["latin"] });
 
+// Componente Home que será renderizado como a página inicial
 export default function Home() {
+  // Obtendo o objeto de roteamento
   const router = useRouter();
 
+  // Retornando o JSX que representa a página inicial
   return (
     <>
-      <h1>Sistema de Serviços</h1>
-      <div> 
-        <button className={styles.button} onClick={() => router.push('/ordem-de-servico')}>Criar Ordem de Serviço</button>
-        <button className={styles.button} onClick={() => router.push('/cadastro')}>Cadastrar Cliente</button>
+      <div>
+        {/* Título principal do aplicativo */}
+        <h1>Panda ツ</h1>
       </div>
+      {/* Título secundário do aplicativo */}
+      <h1>Sistema Web</h1>
     </>
   );
 }

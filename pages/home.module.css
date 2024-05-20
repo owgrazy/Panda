@@ -5,38 +5,46 @@
  * Matrícula: 01632441
  *
  * Descrição:
- * Este arquivo CSS é responsável por estilizar meu projeto.
+ * Este arquivo CSS é responsável por trazer a estilização do meu sistema web.
  *
  * Este script é parte o curso de ADS.
  */
-.body{
-  background-color: white;
+.form, .caixavizinha {
+  flex: 1;
+  margin: 0 20px;
+  overflow: auto; /* Adiciona scroll se necessário */
+  scrollbar-width: auto;
+  
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
+
+.caixavizinha::-webkit-scrollbar {
+  width: 10px;
 }
+
 
 .form {
-  width: 500px;
-  margin-bottom: 1rem;
   text-align: center;
-
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.heading {
+.caixavizinha {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 100px); /* Limita a altura máxima */
+}
+
+.h1 {
   color: saddlebrown;
   text-align: center;
-  position: relative;
   margin-bottom: 20px;
-  font-size: large;
+  font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 
 .input {
@@ -58,23 +66,11 @@
 }
 
 .button:hover {
-  background-color: #8B4513; /* Brown */
-}
-
-.caixaclientes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
-  background: #FFE4B5; /* Moccasin */
-  max-height: 500px;
-  text-align: center;
-  margin-left: 40px;
-  overflow-y: auto;
+  background-color: #8B4513;
 }
 
 .cadastrado {
-  background-color: #FFDAB9; /* PeachPuff */
+  background-color: #FFDAB9;
   border-radius: 4px;
   text-align: left;
   width: 90%;
@@ -82,47 +78,34 @@
   padding: 10px;
 }
 
-.buttone, .buttond, .buttonb {
-  background-color: saddlebrown; /* DarkRed */
-  color: black;
+.buttone, .buttond, .buttonb, .buttoni {
+  background-color: saddlebrown;
+  color: white;
   padding: 5px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   margin-left: 5px;
 }
 
 .buttone:hover {
-  background-color: #FF4500; /* OrangeRed */
+  background-color: #FF4500;
 }
 
 .buttond:hover {
-  background-color: red; /* Crimson */
-}
-
-.p {
-  margin: 5px 0;
-}
-
-.formContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Ajuste conforme necessário */
+  background-color: red;
 }
 
 .inputb {
-  width: 100%;
+  width: 50%;
   margin: 10px 0;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.servico {
-  background-color: #FFDAB9; /* PeachPuff */
-  border-radius: 4px;
-  text-align: left;
-  width: 90%;
-  margin: 10px 0;
-  padding: 10px;
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
