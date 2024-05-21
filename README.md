@@ -36,7 +36,7 @@ cd panda
 3. Instale o Next.js globalmente (se ainda não tiver instalado):
 
 ```bash
-npm install -g next
+npm install next@latest react@latest react-dom@latest
 ```
 
 4. Instale as dependências do projeto utilizando npm:
