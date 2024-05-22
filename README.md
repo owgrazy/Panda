@@ -36,7 +36,7 @@ cd panda
 3. Instale o Next.js globalmente (se ainda não tiver instalado):
 
 ```bash
-npm install -g next
+npm install next@latest react@latest react-dom@latest
 ```
 
 4. Instale as dependências do projeto utilizando npm:
@@ -54,19 +54,15 @@ npm install
 npm install -g firebase-tools
 ```
 
-- Faça login na Firebase CLI:
+## Configuração do Firebase
 
-```bash
-firebase login
-```
+O projeto já está configurado para se conectar ao banco de dados Firebase. Não é necessário configurar suas próprias credenciais a menos que deseje fazer alterações na configuração do Firebase.
 
-- Inicie o projeto Firebase:
+Se você precisar fazer alterações na configuração do Firebase, siga estas etapas:
 
-```bash
-firebase init
-```
-
-Siga as instruções para configurar o Firebase Realtime Database e/ou Firebase Authentication, conforme necessário para o seu projeto.
+1. Faça login na [console do Firebase](https://console.firebase.google.com/).
+2. Acesse o projeto Panda.
+3. Copie as credenciais do Firebase para o arquivo de configuração do projeto, se necessário.
 
 ## Rodando o projeto
 
