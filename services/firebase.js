@@ -18,13 +18,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD-8BKiw6itaOxxgj4tPhV0hcupGccoCQI",
-  authDomain: "dback-cfab2.firebaseapp.com",
-  databaseURL: "https://dback-cfab2-default-rtdb.firebaseio.com",
-  projectId: "dback-cfab2",
-  storageBucket: "dback-cfab2.appspot.com",
-  messagingSenderId: "570321836504",
-  appId: "1:570321836504:web:7d1c33c9469ecb298b7aad"
+  apiKey: process.env.FIRE_API_KEY,
+  authDomain: process.env.FIRE_AUTH_DOMAIN,
+  databaseURL: process.env.FIRE_DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.FIRE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIRE_MESSAGING_SENDER_ID,
+  appId: process.env.FIRE_APP_ID
 };
 
 // Initialize Firebase
