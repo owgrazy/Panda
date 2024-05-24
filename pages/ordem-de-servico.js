@@ -20,6 +20,7 @@ import styles from './home.module.css';
 // Importando o hook useRouter do Next.js para roteamento
 import { useRouter } from 'next/router';
 
+
 // Componente para o formulário de ordem de serviço
 export default function OrdemDeServicoForm() {
   // Definindo estados para clientes, ordens e dados do formulário
@@ -156,6 +157,19 @@ export default function OrdemDeServicoForm() {
     fetchOrdens();
   };
 
+  const getStatusClass = (status) => {
+    switch (status) {
+      case 'Pendente':
+        return `${styles.status} ${styles['status-pendente']}`;
+      case 'Em andamento':
+        return `${styles.status} ${styles['status-em-andamento']}`;
+      case 'Concluído':
+        return `${styles.status} ${styles['status-concluido']}`;
+      default:
+        return styles.status;
+    }
+  };
+
   // Retornando o JSX que representa o formulário e a lista de ordens de serviço
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -224,7 +238,7 @@ export default function OrdemDeServicoForm() {
               <p>{ordem.descricao}</p>
               <p>{ordem.custoEstimado}</p>
               <p>{ordem.observacoes}</p>
-              <p>{ordem.status}</p>
+              <p className={getStatusClass(ordem.status)}>{ordem.status}</p>
               <div> 
                 {/* Botões para editar e excluir uma ordem de serviço */}
                 <button className={styles.buttone} onClick={() => handleEdit(ordem)}>Editar</button>

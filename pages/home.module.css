@@ -109,3 +109,30 @@
   flex-direction: column;
   align-items: center;
 }
+
+.status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.status::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-pendente::before {
+  background-color: red;
+}
+
+.status-em-andamento::before {
+  background-color: orange;
+}
+
+.status-concluido::before {
+  background-color: green;
+}
